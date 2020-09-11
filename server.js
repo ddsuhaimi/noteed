@@ -17,7 +17,8 @@ app.use(
 app.use(bodyParser.json());
 
 
-const db = process.env.MONGO_URI;
+// const db = process.env.MONGO_URI;
+const db = "mongodb+srv://email:email@cluster0-vs8vw.mongodb.net/noteed?retryWrites=true&w=majority";
 
 mongoose
 .connect(db, {
